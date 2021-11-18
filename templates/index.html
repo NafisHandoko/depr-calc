@@ -10,6 +10,7 @@
   <h1>This is Depression Calculator</h1>
   <form action="/result" method="POST">
     <div class="data-diri">
+      <h3>Data diri</h3>
       <input type="number" name="umur" placeholder="Masukkan umur">
       <div class="jkradio">
         <input type="radio" name="jk" id="jk1" value="1">
@@ -18,8 +19,83 @@
         <label for="jk2">Perempuan</label>
       </div>
     </div>
-    <div class="psikologis"></div>
-    <div class="fisik"></div>
+    <div class="psikologis">
+      <h3>Aspek Psikologis</h3>
+      <!-- <div class="bersalah"></div>
+      <div class="takpede"></div>
+      <div class="cemas"></div>
+      <div class="badmood"></div>
+      <div class="sensi"></div>
+      <div class="takfokus"></div>
+      <div class="apatis"></div>
+      <div class="unmotivated"></div> -->
+      <div class="">
+        <input type="range" id="ap1" name="ap1" min="1" max="5">
+        <label for="ap1">Rasa bersalah</label>
+      </div>
+      <div class="">
+        <input type="range" id="ap2" name="ap2" min="1" max="5">
+        <label for="ap2">Kurang percaya diri</label>
+      </div>
+      <div class="">
+        <input type="range" id="ap3" name="ap3" min="1" max="5">
+        <label for="ap3">Cemas</label>
+      </div>
+      <div class="">
+        <input type="range" id="ap4" name="ap4" min="1" max="5">
+        <label for="ap4">Badmood</label>
+      </div>
+      <div class="">
+        <input type="range" id="ap5" name="ap5" min="1" max="5">
+        <label for="ap5">Sensitif</label>
+      </div>
+      <div class="">
+        <input type="range" id="ap6" name="ap6" min="1" max="5">
+        <label for="ap6">Sulit berkonsentrasi</label>
+      </div>
+      <div class="">
+        <input type="range" id="ap7" name="ap7" min="1" max="5">
+        <label for="ap7">Apatis</label>
+      </div>
+      <div class="">
+        <input type="range" id="ap8" name="ap8" min="1" max="5">
+        <label for="ap8">Kehilangan motivasi</label>
+      </div>
+      <input type="hidden" name="ap">
+    </div>
+    <div class="fisik">
+      <h3>Aspek Fisik</h3>
+      <!-- <div class="lelah"></div>
+      <div class="taknafsu"></div>
+      <div class="insomnia"></div>
+      <div class="pusing"></div>
+      <div class="beratturun"></div> -->
+      <div class="">
+        <input type="range" id="af1" name="af1" min="1" max="5">
+        <label for="af1">Sering lelah</label>
+      </div>
+      <div class="">
+        <input type="range" id="af2" name="af2" min="1" max="5">
+        <label for="af2">Nafsu makan turun</label>
+      </div>
+      <div class="">
+        <input type="range" id="af3" name="af3" min="1" max="5">
+        <label for="af3">Jadwal tidur berantakan</label>
+      </div>
+      <div class="">
+        <input type="range" id="af4" name="af4" min="1" max="5">
+        <label for="af4">Sering pusing</label>
+      </div>
+      <div class="">
+        <input type="range" id="af5" name="af5" min="1" max="5">
+        <label for="af5">Berat badan turun</label>
+      </div>
+      <input type="hidden" name="ap">
+    </div>
+    <div class="mp">
+      <input type="range" id="mp" name="mp" min="1" max="5">
+      <label for="mp">Masalah pribadi</label>
+    </div>
     <input type="submit" value="Submit">
   </form>
 </body>
