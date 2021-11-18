@@ -21,7 +21,11 @@ def result():
     return render_template('result.html',lvq=lvq)
   return render_template('index.html')
   
-
+@app.route('/test',methods=['GET','POST'])
+def test():
+  # if request.method=='POST':
+  text = request.form['test']
+  return render_template('test.html',text=text)
 
 if __name__ == '__main__':
   # Run the Flask app

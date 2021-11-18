@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>depr-calc | Depression Calculator</title>
   <link rel="stylesheet" href="static/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
   <h1>This is Depression Calculator</h1>
@@ -98,5 +99,10 @@
     </div>
     <input type="submit" value="Submit">
   </form>
+  <form id="testForm" action="/test" method="post">
+    <input type="text" name="test" id="test">
+    <input type="submit" value="Submit" id="submit">
+  </form>
+  <script src="static/js/script.js"></script>
 </body>
 </html>
