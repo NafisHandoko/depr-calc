@@ -9,7 +9,7 @@
 </head>
 <body>
   <h1>This is Depression Calculator</h1>
-  <form action="/result" method="POST">
+  <form action="/test" method="POST" id="lvq-form">
     <div class="data-diri">
       <h3>Data diri</h3>
       <input type="number" name="umur" placeholder="Masukkan umur">
@@ -62,7 +62,7 @@
         <input type="range" id="ap8" name="ap8" min="1" max="5">
         <label for="ap8">Kehilangan motivasi</label>
       </div>
-      <input type="hidden" name="ap">
+      <input type="hidden" name="ap" class="aphidden">
     </div>
     <div class="fisik">
       <h3>Aspek Fisik</h3>
@@ -91,7 +91,7 @@
         <input type="range" id="af5" name="af5" min="1" max="5">
         <label for="af5">Berat badan turun</label>
       </div>
-      <input type="hidden" name="ap">
+      <input type="hidden" name="af" class="afhidden">
     </div>
     <div class="mp">
       <input type="range" id="mp" name="mp" min="1" max="5">

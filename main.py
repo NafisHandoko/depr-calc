@@ -24,8 +24,13 @@ def result():
 @app.route('/test',methods=['GET','POST'])
 def test():
   # if request.method=='POST':
-  text = request.form['test']
-  return render_template('test.html',text=text)
+  umur = request.form['umur']
+  jk = request.form['jk']
+  ap = request.form['ap']
+  af = request.form['af']
+  mp = request.form['mp']
+  out=[umur,jk,ap,af,mp]
+  return render_template('test.html',text=out)
 
 if __name__ == '__main__':
   # Run the Flask app
