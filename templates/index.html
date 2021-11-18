@@ -8,5 +8,19 @@
 </head>
 <body>
   <h1>This is Depression Calculator</h1>
+  <form action="/result" method="POST">
+    <div class="data-diri">
+      <input type="number" name="umur" placeholder="Masukkan umur">
+      <div class="jkradio">
+        <input type="radio" name="jk" id="jk1" value="1">
+        <label for="jk1">Laki-laki</label>
+        <input type="radio" name="jk" id="jk2" value="0">
+        <label for="jk2">Perempuan</label>
+      </div>
+    </div>
+    <div class="psikologis"></div>
+    <div class="fisik"></div>
+    <input type="submit" value="Submit">
+  </form>
 </body>
 </html>

@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from models import LVQ
 
 # Create a flask app
 app = Flask(
@@ -12,9 +13,14 @@ app = Flask(
 def hello():
   return render_template('index.html')
 
-@app.route('/result')
+@app.route('/result', methods=['POST'])
 def result():
-  pass
+  if request.method=='POST':
+    text = request.form['text']
+    lvq = LVQ(text)
+    return render_template('result.html',lvq=lvq)
+  return render_template('index.html')
+  
 
 
 if __name__ == '__main__':
