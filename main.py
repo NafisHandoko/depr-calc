@@ -12,6 +12,11 @@ app = Flask(
 def hello():
   return render_template('index.html')
 
+@app.route('/result')
+def result():
+  pass
+
+
 if __name__ == '__main__':
   # Run the Flask app
   app.run(
