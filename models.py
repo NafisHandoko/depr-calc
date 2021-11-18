@@ -7,7 +7,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 class LVQ:
   def __init__(self,dtest,maxepoch,learnRate,lr_reducer):
-    self.dtest = dtest
+    self.dtest = [dtest]
     self.dtrain = pd.read_csv('static/assets/datasets/datatrain.csv')
     self.dbobot = pd.read_csv('static/assets/datasets/bobot.csv')
     self.maxepoch = maxepoch
@@ -19,7 +19,7 @@ class LVQ:
     self.kelas = None
   
   def normalize(self):
-    concatData=np.concatenate((self.dtrain.values,self.dbobot_data,self.dtest),axis=0)
+    concatData=np.concatenate((self.dtrain.values,self.dbobot.values,self.dtest),axis=0)
     concatData=concatData.astype(np.float)
     norm = MinMaxScaler()
     norm.fit(concatData[0:,0:-1])

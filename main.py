@@ -16,8 +16,16 @@ def hello():
 @app.route('/result', methods=['POST'])
 def result():
   if request.method=='POST':
-    text = request.form['text']
-    lvq = LVQ(text)
+    umur = request.form['umur']
+    jk = request.form['jk']
+    ap = request.form['ap']
+    af = request.form['af']
+    mp = request.form['mp']
+    dtest=[umur,jk,ap,af,mp,0]
+    lvq = LVQ(dtest,maxepoch=3,learnRate=0.1,lr_reducer=0.1)
+    lvq.normalize()
+    lvq.train()
+    lvq.test()
     return render_template('result.html',lvq=lvq)
   return render_template('index.html')
   
