@@ -1,3 +1,21 @@
-h1{
-  color: red;
+:root{
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  padding-right: 40px;
+  padding-left: 40px;
+  max-width: 100%;
+}
+
+.data-diri,.psikologis,.fisik,.mp{
+  background-color: rgb(167, 237, 255);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
 }
