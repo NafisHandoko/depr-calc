@@ -2,20 +2,60 @@
   font-family: 'Roboto', sans-serif;
 }
 
+input{
+  box-sizing: border-box;
+  max-width: 90%;
+}
+
 body{
   padding: 0;
   margin: 0;
 }
 
 .container{
-  padding-right: 40px;
-  padding-left: 40px;
+  /* padding-right: 40px;
+  padding-left: 40px; */
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-size: clamp(20px,3vw,3rem);
+}
+
+input[type=number]{
+  border: none;
+  height: 30px;
+  padding-left: 10px;
 }
 
 .data-diri,.psikologis,.fisik,.mp{
   background-color: rgb(167, 237, 255);
   border-radius: 15px;
   margin: 10px;
-  padding: 10px;
+  padding: 25px;
+  padding-top: 10px;
+  width: 60vw;
+}
+
+.data-diri label{
+  margin-bottom: 5px;
+}
+
+.umurdiv,.jkdiv,.range-input,.mp{
+  display: flex;
+  flex-direction: column;
+}
+
+.umurdiv{
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .data-diri,.psikologis,.fisik,.mp{
+    /* width: 100%; */
+    width: 80vw;
+  }
 }
