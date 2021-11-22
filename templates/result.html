@@ -4,10 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hasil Prediksi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/result.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Ini halaman hasil</h1>
-  <p>Prediksi kelas {{lvq.getKelas()}}</p>
-  <p>Anda {{{1:'tidak berpotensi', 2:'berpotensi', 3:'sangat berpotensi'}[lvq.getKelas()]+' menderita depresi'}}</p>
+  <div class="container">
+    <h1>Hasil Prediksi</h1>
+    <p>Prediksi kelas {{lvq.getKelas()}}</p>
+    <p class="face">{{{1:'🙂', 2:'😐', 3:'☹️'}[lvq.getKelas()]}}</p>
+    <p>Anda {{{1:'tidak berpotensi', 2:'berpotensi', 3:'sangat berpotensi'}[lvq.getKelas()]+' menderita depresi'}}</p>
+    <a href="../" class="home-btn">Tes Lagi</a>
+  </div>
 </body>
 </html>
