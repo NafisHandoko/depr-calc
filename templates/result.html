@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Hasil Prediksi</title>
 </head>
 <body>
   <h1>Ini halaman hasil</h1>
-  <p>Prediksi kelas: {{lvq.getKelas()}}</p>
+  <p>Prediksi kelas {{lvq.getKelas()}}</p>
+  <p>Anda {{{1:'tidak berpotensi', 2:'berpotensi', 3:'sangat berpotensi'}[lvq.getKelas()]+' menderita depresi'}}</p>
 </body>
 </html>
