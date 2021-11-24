@@ -14,6 +14,10 @@
   <a href="http://kemahasiswaan.unej.ac.id/wp-content/uploads/2020/07/cropped-Logo-Baku-UNEJ-2020-Square.png" alt="Logo" width="300">
   </a>
 
+  <a href="https://www.freecodecamp.org">
+    <img src="http://protan.faperta.unej.ac.id/wp-content/uploads/sites/14/2020/05/logo-unej-300x296.png" alt="Logo" width="300">
+  </a>
+
   <h3 align="center">Depression Calculator</h3>
 
   <p align="center">
